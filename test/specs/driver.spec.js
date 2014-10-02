@@ -1,9 +1,9 @@
 'use strict';
 
-var WicedSense = source("driver");
+var WICEDSense = source("driver");
 
-describe("Cylon.Drivers.WicedSense", function() {
-  var driver = new WicedSense({
+describe("Cylon.Drivers.WICEDSense", function() {
+  var driver = new WICEDSense({
     device: { connection: 'connect' }
   });
 

@@ -2,8 +2,7 @@
 
 var module = source("cylon-wiced-sense");
 
-var Adaptor = source('adaptor'),
-    Driver = source('driver');
+var WICEDSense = source('driver');
 
 describe("Cylon.WicedSense", function() {
   describe("#register", function() {
@@ -13,15 +12,9 @@ describe("Cylon.WicedSense", function() {
   });
 
   describe("#driver", function() {
-    it("returns an instance of the Driver", function() {
-      var args = { device: {} };
-      expect(module.driver(args)).to.be.instanceOf(Driver);
-    });
-  });
-
-  describe("#adaptor", function() {
-    it("returns an instance of the Adaptor", function() {
-      expect(module.adaptor()).to.be.instanceOf(Adaptor);
+    it("returns an instance of the WICEDSense", function() {
+      var args = { device: {connection: 'test'} };
+      expect(module.driver(args)).to.be.instanceOf(WICEDSense);
     });
   });
 });
