@@ -57,7 +57,7 @@ As long as you have the needed hardware in your computer for Bluetooth LE (Bluet
 
 ## Release History
 
-None yet...
+Version 0.1.0 - Initial release
 
 ## License
 
