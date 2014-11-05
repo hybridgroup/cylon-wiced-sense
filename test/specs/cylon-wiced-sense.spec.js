@@ -5,9 +5,9 @@ var module = source("cylon-wiced-sense");
 var WICEDSense = source('driver');
 
 describe("Cylon.WicedSense", function() {
-  describe("#register", function() {
-    it("should be a function", function() {
-      expect(module.register).to.be.a('function');
+  describe("#drivers", function() {
+    it('is an array of supplied drivers', function() {
+      expect(module.drivers).to.be.eql(['wiced-sense']);
     });
   });
 
