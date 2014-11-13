@@ -4,7 +4,7 @@ var WICEDSense = source("driver");
 
 describe("Cylon.Drivers.WICEDSense", function() {
   var driver = new WICEDSense({
-    device: { connection: 'connect' }
+    adaptor: {}
   });
 
   it("needs tests");

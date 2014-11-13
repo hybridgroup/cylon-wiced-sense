@@ -13,7 +13,7 @@ describe("Cylon.WicedSense", function() {
 
   describe("#driver", function() {
     it("returns an instance of the WICEDSense", function() {
-      var args = { device: {connection: 'test'} };
+      var args = { adaptor: {} };
       expect(module.driver(args)).to.be.instanceOf(WICEDSense);
     });
   });
