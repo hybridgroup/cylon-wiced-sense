@@ -20,8 +20,13 @@ Install the module with: `npm install cylon-wiced-sense`
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: { name: 'bluetooth', adaptor: 'ble', uuid: '207377654321'},
-  device: {name: 'wiced', driver: 'wiced-sense'},
+  connections: {
+    bluetooth: { adaptor: 'ble', uuid: '207377654321' }
+  },
+
+  devices: {
+    wiced: { driver: 'wiced-sense' }
+  },
 
   display: function(err, data) {
     if (err) {
