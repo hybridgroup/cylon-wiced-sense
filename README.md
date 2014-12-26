@@ -8,13 +8,16 @@ This repository contains the Cylon driver for the Broadcom WICED Sense Bluetooth
 For more information about Cylon, check out the repo at
 https://github.com/hybridgroup/cylon
 
-## Getting Started
+## How to Install
 
-Install the module with: `npm install cylon-wiced-sense`
+To connect to the WICED Sense with Cylon, you'll need to install the `cylon-wiced-sense` NPM module.
+You will also need to bundle in `cylon-ble`, which is needed to communicate with the device.
 
-## Examples
+    $ npm install cylon-ble cylon-wiced-sense
 
-## Connecting
+## How to Use
+
+Here's a short example of getting data from the WICED Sense with Cylon:
 
 ```javascript
 var Cylon = require('cylon');
@@ -28,23 +31,30 @@ Cylon.robot({
     wiced: { driver: 'wiced-sense' }
   },
 
-  display: function(err, data) {
-    if (err) {
-      console.log("Error:", err);
-    } else {
-      console.log("Data:", data);
-    }
-  },
-
   work: function(my) {
-    my.wiced.getData(function(err, data){
-      my.display(err, data);
+    my.wiced.getData(function(err, data) {
+      if (!!err) {
+        console.log("Error: ", err);
+        return;
+      }
+
+      console.log("Data: ", data);
     });
   }
 }).start();
 ```
 
-As long as you have the needed hardware in your computer for Bluetooth LE (Bluetooth 4.0), you can connect to the WICED Sense.
+## How to Connect
+
+The WICED Sense is a Bluetooth Low-Energy device, and is paired and connected as with any other BLE device. As long as you have the needed hardware in your computer for Bluetooth LE (Bluetooth 4.0), you can connect to the WICED Sense.
+
+For more info, check out the [BLE platform page](http://cylonjs.com/documentation/platforms/ble).
+
+## Documentation
+
+We're busy adding documentation to our web site at http://cylonjs.com/ please check there as we continue to work on Cylon.js
+
+Thank you!
 
 ## Contributing
 
