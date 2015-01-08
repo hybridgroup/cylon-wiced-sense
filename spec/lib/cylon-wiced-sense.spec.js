@@ -1,20 +1,20 @@
 "use strict";
 
-var module = source("cylon-wiced-sense");
+var wiced = source("cylon-wiced-sense");
 
-var WICEDSense = source('driver');
+var WICEDSense = source("driver");
 
 describe("Cylon.WicedSense", function() {
   describe("#drivers", function() {
-    it('is an array of supplied drivers', function() {
-      expect(module.drivers).to.be.eql(['wiced-sense']);
+    it("is an array of supplied drivers", function() {
+      expect(wiced.drivers).to.be.eql(["wiced-sense"]);
     });
   });
 
   describe("#driver", function() {
     it("returns an instance of the WICEDSense", function() {
       var args = { adaptor: {} };
-      expect(module.driver(args)).to.be.instanceOf(WICEDSense);
+      expect(wiced.driver(args)).to.be.instanceOf(WICEDSense);
     });
   });
 });

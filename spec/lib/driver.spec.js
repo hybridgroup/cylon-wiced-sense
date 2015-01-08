@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var WICEDSense = source("driver");
 
@@ -7,5 +7,7 @@ describe("Cylon.Drivers.WICEDSense", function() {
     adaptor: {}
   });
 
-  it("needs tests");
+  it("needs tests", function() {
+    expect(driver).to.be.an.instanceOf(WICEDSense);
+  });
 });
