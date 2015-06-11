@@ -13,7 +13,19 @@
     "url": "https://github.com/hybridgroup/cylon-wiced-sense"
   },
 
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
+
+  "keywords": [
+    "cylon",
+    "cylonjs",
+    "cylons",
+    "robot",
+    "robots",
+    "robotics",
+    "iot",
+    "wiced-sense",
+    "ble"
+  ],
 
   "devDependencies": {
     "sinon-chai": "2.5.0",
