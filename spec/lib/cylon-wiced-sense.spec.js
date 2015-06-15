@@ -1,8 +1,8 @@
 "use strict";
 
-var wiced = source("cylon-wiced-sense");
+var wiced = lib("cylon-wiced-sense");
 
-var WICEDSense = source("driver");
+var WICEDSense = lib("driver");
 
 describe("Cylon.WicedSense", function() {
   describe("#drivers", function() {

@@ -1,9 +1,8 @@
-// jshint expr:true
 "use strict";
 
 var Cylon = require("cylon");
 
-var WICEDSense = source("driver");
+var WICEDSense = lib("driver");
 
 describe("Cylon.Drivers.WICEDSense", function() {
   var driver;

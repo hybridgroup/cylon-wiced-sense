@@ -1,0 +1,4 @@
+rules:
+  camelcase: 0
+  no-shadow: 0
+  max-nested-callbacks: 0

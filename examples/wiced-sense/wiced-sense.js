@@ -15,7 +15,7 @@ Cylon.robot({
   },
 
   display: function(err, data) {
-    if (!!err) {
+    if (err) {
       console.log("error:", err);
       return;
     }
