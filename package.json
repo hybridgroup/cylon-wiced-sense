@@ -1,7 +1,6 @@
 {
   "name": "cylon-wiced-sense",
   "version": "0.5.0",
-  "main": "lib/cylon-wiced-sense.js",
   "description": "Cylon module for WicedSense",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-wiced-sense/issues",

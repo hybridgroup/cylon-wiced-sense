@@ -1,6 +1,6 @@
 "use strict";
 
-var wiced = lib("cylon-wiced-sense");
+var wiced = lib("../");
 
 var WICEDSense = lib("driver");
 
