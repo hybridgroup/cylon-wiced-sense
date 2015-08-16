@@ -47,4 +47,4 @@ noble.on('stateChange', function(state) {
       }
     }).start();
   }
-}
+});

@@ -67,7 +67,7 @@ noble.on('stateChange', function(state) {
       }
     }).start();
   }
-}
+});
 ```
 
 ## How to Connect
