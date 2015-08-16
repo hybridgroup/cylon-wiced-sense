@@ -3,10 +3,10 @@
 var noble = require("noble");
 var Cylon = require("cylon");
 
-//wait for noble to power on
-//this is necessary for Ubuntu system but not OSX
+// wait for noble to power on
+// this is necessary for Ubuntu system but not OSX
 noble.on("stateChange", function(state) {
-  if (state === "poweredOn"){
+  if (state === "poweredOn") {
     Cylon.robot({
       connections: {
         bluetooth: { adaptor: "ble", uuid: "207377654321" }
