@@ -1,6 +1,6 @@
 {
   "name": "cylon-wiced-sense",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Cylon module for WicedSense",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-wiced-sense/issues",
@@ -23,7 +23,11 @@
     "robotics",
     "iot",
     "wiced-sense",
-    "ble"
+    "ble",
+    "bluetooth",
+    "bluetooth le",
+    "wiced",
+    "broadcom"
   ],
 
   "devDependencies": {
@@ -35,7 +39,7 @@
   },
 
   "dependencies": {
-    "cylon": "~1.1.0",
-    "cylon-ble": "~0.7.1"
+    "cylon": "~1.2.0",
+    "cylon-ble": "~0.8.0"
   }
 }
